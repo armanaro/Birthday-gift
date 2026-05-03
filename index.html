@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="loader-content">
+            <img src="asset/kitty-removebg-preview.png" alt="Loading icon" class="loading-icon">
+            <p class="loading-text">Loading something special...</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <button id="start-btn" onclick="startExperience()">
+            ✨ Start Surprise ✨
+        </button>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="perfect song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section class="header-section">
+        <div class="polaroid-frame">
+            <img src="asset/Picsart_25-12-20_20-46-22-342-1.jpg" class="floating-heart">
+        </div>
+        <div id="entry-overlay">
+        </div>
+        <div class="heart-container left" id="hearts-left">
+            <img src="asset/james-lee-YpDkIh137ws-unsplash.jpg" class="heart-img">
+        </div>
+        <h1 id="typewriter"></h1>
+        <div class="heart-container right" id="hearts-right">
+            <img src="asset/james-lee-YpDkIh137ws-unsplash.jpg" class="heart-img">
+        </div>
+        <h2 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d63384;">
+            best wishes for you...
+        </h2>
+        <p style="font-size: 1.5rem; color: #555;">July 6, 2026 🗓️</p>
+        <p>Today is all about celebrating you and the joy.</p>
+        <button onclick="scrollToMemories()">See more</button>
+    </section>
+
+    <section id="memories" class="gallery-section">
+        <h2>Memories</h2>
+        <div class="grid">
+            <div class="photo-card"><img src="asset/Picsart_25-12-20_20-48-17-598-1.jpg" alt="Memory 1"></div>
+            <div class="photo-card"><img src="asset/Picsart_25-12-20_20-48-40-981.jpg" alt="Memory 2"></div>
+            <div class="photo-card"><img src="asset/Picsart_25-12-20_20-45-52-018-1.jpg" alt="Memory 3"></div>
+            <div class="photo-card"><img src="asset/IMG-20250401-WA0010.jpg" alt="Memory 4"></div>
+            <div class="photo-card"><img src="asset/IMG-20250401-WA0015.jpg" alt="Memory 5"></div>
+            <div class="photo-card"><img src="asset/IMG-20250401-WA0040.jpg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="asset/27170438.jpg" alt="Memory 6"></div>
+            <div class="photo-card"><img src="asset/Screenshot_2025-07-06-09-16-37-02_6012fa4d4ddec268fc5c7112cbb265e7.jpg" alt="Memory 6"></div>
+        </div>
+        <section id="video-memories" class="gallery-section">
+            <h2>Moments in Motion 🎬</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/lv_0_20260503073835.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/lv_0_20260503073711.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-card">
+                    <video autoplay loop muted playsinline class="continuous-video">
+                        <source src="asset/lv_0_20260503073752.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="letter-section">
+        <button class="letter-btn" onclick="openLetter()">💌 Open My Letter</button>
+
+        <div class="letter-container" id="letterContainer">
+
+        </div>
+
+        <div class="letter-envelope" id="letter">
+            <div class="letter-paper">
+                <h3>cutie</h3>
+                <p>
+                    Happy Birthday, cutie 💕<br> From the moment you came into my life, everything became brighter. Your smile, your kindness, thank you for being in my life.
+                    <br><br> Best friends 💖
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-box">
+            <h3>A Special Message for You</h3>
+            <p> 🥂✨</p>
+            <div class="hearts">❤️❤️❤️</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
